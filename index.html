@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        
+    <header>
+        <h1><a href="#">
+            <img src="images/logo.png">
+        </a></h1>
+        <ul class="gnb">
+            <li><a href="#">여행지</a></li>
+            <li><a href="#">일정만들기</a></li>
+            <li><a href="#">호텔</a></li>
+            <li><a href="#">이용방법</a></li>
+            <li><a href="#">여행상품</a></li>
+        </ul>
+
+    <!-- input태그는 사용자에게 데이터를 받기
+    위한 창구  -->
+        <form>
+            <input type="text" placeholder="도시/장소를 찾아보세요">
+<!-- 
+    플레이스홀더는
+    사용자에게 입력받을 창에
+    예시 혹은 안내메세지를 미리 적어두는 것
+
+ -->
+            <button>
+                <img src="images/icon_search2.png">
+            </button>
+        </form>
+
+        <div class="util">
+            <a href="#" class="login">로그인</a>
+            <a href="#" class="join">회원가입</a>
+        </div><!--util-->
+    </header>
+
+    <div class="banner">
+        <h2>나만의 여행 플래너 어스토리!</h2>
+        <p class="subTxt">쉽고 빠르게 여행을 계획하세요.</p>
+    
+        <div class="srch">
+            <form>
+                <input type="text" placeholder="국가명, 도시명으로 검색">
+                <button><img src="images/icon_search1.gif"></button>
+            </form>
+    
+            <div class="keyword">
+                <p>
+                    추천도시 : 
+                    <a href="#">홍콩</a>,
+                    <a href="#">런던</a>,
+                    <a href="#">타이베이</a>
+                </p>
+    
+                <p><a href="#">지도에서 검색></a></p>
+            </div><!--keyword-->
+    
+        </div><!--srch까만색박스-->
+    
+    </div><!--banner-->
+    
+
+    <section class="s1">
+        <h3>어스토리에서 여행을 시작하세요!</h3>
+
+        <div class="con">
+            <div class="item">
+                <a href="#">
+                    <img src="images/intro01.jpg">
+                    <h4>여행정보</h4>
+                    <p>
+                        전 세계 800개 도시, 30만개의 관광명소, 음식점, 쇼핑 정보를 확인하세요. 
+                    </p>
+                </a>
+            </div><!--item-->
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/intro02.jpg">
+                    <h4>여행일정</h4>
+                    <p>전 세계 100,000개 이상의 여행일정을 확인하고 나만의 일정을 계획해 보세요.</p>
+                </a>
+            </div><!--item-->
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/intro03.jpg">
+                    <h4>커뮤니티</h4>
+                    <p>여행자들과 정보를 공유하고, 궁금한 것은 언제든 물어보세요.</p>
+                </a>
+            </div><!--item-->
+        </div><!--con-->
+
+        <a href="#" class="more">사용방법이 궁금하신가요?</a>
+    </section><!--s1-->
+
+    <section class="s2">
+        <h3>인기 여행 일정</h3>
+        <p class="subTit">다른 여행자들의 일정을 참고해 나만의 여행을 계획해보세요!</p>
+
+    <div class="con">
+
+        <div class="item">
+           <a href="#">
+                <div class="pic">
+                     <img src="images/plan01.jpg">
+                     <div class="tit">
+                        <p>2023-03-22 <span>7DAYS</span></p>
+                        <h4>여행제목 작성하기</h4>
+                     </div><!--tit-->
+                </div><!--pic-->
+     
+                <div class="txt">
+                    <ul class="info">
+                        <li>친구와 함께</li>
+                        <li>장소이름</li>
+                        <li class="user">작성자</li>
+                    </ul><!--info-->
+
+                    <ul class="count">
+                        <li class="spot">36</li>
+                        <li class="view">124</li>
+                        <li class="copy">28</li>
+                    </ul><!--count-->
+                </div><!--txt-->
+           </a>
+        </div><!--item-->
+
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/plan02.jpg">
+                    <div class="tit">
+                        <p>2023-03-22 <span>10DAYS</span></p>
+                        <h4>여행제목 작성하기</h4>
+                    </div><!--tit-->
+                </div><!--pic-->
+                <div class="txt">
+                    <ul class="info">
+                        <li>연인과 함께</li>
+                        <li>장소이름</li>
+                        <li class="user">작성자</li>
+                    </ul><!--info-->
+
+                    <ul class="count">
+                        <li class="spot">8</li>
+                        <li class="view">230</li>
+                        <li class="copy">121</li>
+                    </ul><!--count-->
+                </div><!--txt-->
+            </a>
+        </div><!--item-->
+
+     <div class="item">
+        <a href="#">
+            <div class="pic">
+                <img src="images/plan03.jpg">
+                <div class="tit">
+                    <p>2023-03-22 <span>8DAYS</span></p>
+                    <h4>여행제목 작성하기</h4>
+                </div><!--tit-->
+            </div><!--pic-->
+            <div class="txt">
+                <ul class="info">
+                    <li>친구와 함께</li>
+                    <li>장소이름</li>
+                    <li class="user">작성자</li>
+                </ul><!--info-->
+
+                <ul class="count">
+                    <li class="spot">12</li>
+                    <li class="view">222</li>
+                    <li class="copy">144</li>
+                </ul><!--count-->
+            </div><!--txt-->
+        </a>
+     </div><!--item-->
+     
+     <div class="item">
+        <a href="#">
+            <div class="pic">
+                <img src="images/plan04.jpg">
+                <div class="tit">
+                    <p>2023-03-22 <span>8DAYS</span></p>
+                    <h4>여행제목 작성하기</h4>
+                </div><!--tit-->
+            </div><!--pic-->
+            <div class="txt">
+                <ul class="info">
+                    <li>친구와 함께</li>
+                    <li>장소이름</li>
+                    <li class="user">작성자</li>
+                </ul><!--info-->
+
+                <ul class="count">
+                    <li class="spot">12</li>
+                    <li class="view">222</li>
+                    <li class="copy">144</li>
+                </ul><!--count-->
+            </div><!--txt-->
+        </a>
+     </div><!--item-->
+
+     <div class="item">
+        <a href="#">
+            <div class="pic">
+                <img src="images/plan05.jpg">
+                <div class="tit">
+                    <p>2023-03-22 <span>8DAYS</span></p>
+                    <h4>여행제목 작성하기</h4>
+                </div><!--tit-->
+            </div><!--pic-->
+            <div class="txt">
+                <ul class="info">
+                    <li>친구와 함께</li>
+                    <li>장소이름</li>
+                    <li class="user">작성자</li>
+                </ul><!--info-->
+
+                <ul class="count">
+                    <li class="spot">12</li>
+                    <li class="view">222</li>
+                    <li class="copy">144</li>
+                </ul><!--count-->
+            </div><!--txt-->
+        </a>
+     </div><!--item-->
+
+     <div class="item">
+        <a href="#">
+            <div class="pic">
+                <img src="images/plan06.jpg">
+                <div class="tit">
+                    <p>2023-03-22 <span>8DAYS</span></p>
+                    <h4>여행제목 작성하기</h4>
+                </div><!--tit-->
+            </div><!--pic-->
+            <div class="txt">
+                <ul class="info">
+                    <li>친구와 함께</li>
+                    <li>장소이름</li>
+                    <li class="user">작성자</li>
+                </ul><!--info-->
+
+                <ul class="count">
+                    <li class="spot">12</li>
+                    <li class="view">222</li>
+                    <li class="copy">144</li>
+                </ul><!--count-->
+            </div><!--txt-->
+        </a>
+     </div><!--item-->
+
+     </div> <!--con-->
+
+
+     <div class="more">
+        <a href="#">
+            56,065개의 추천일정 모두보기
+        </a>
+     </div><!--more-->
+
+    </section><!--s2-->
+
+ 
+<section class="s3">
+
+    <h3>어디로 갈까?</h3>
+    <p class="subTit">팁에서 아이디어를 얻어보세요.</p>
+
+    <div class="con">
+
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip01.jpg">
+                    <span class="locate">3</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>방콕의 필수 여행지</h4>
+                    <p>어디를 가서 무엇을 봐야할지 도저히 감이 잡히지 않는다면, 필수 스팟을 중심으로 둘러보자.</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip02.jpg">
+                    <span class="locate">6</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>가우디의 도시, 바르셀로나</h4>
+                    <p>가우디의 도시, 바르셀로나</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->
+
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip03.jpg">
+                    <span class="locate">8</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>절대 놓치지 말아야 할 시드니의 그곳</h4>
+                    <p>시드니를 떠올리면 가장 먼저 생각날 곳들. 시드니에서 이곳을 가지 않고 ...</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->      
+
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip04.jpg">
+                    <span class="locate">12</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>싱가포르의 화려한 밤</h4>
+                    <p>싱가포르에서 '핫'한 주말밤 보내기. 월, 화, 목, 일요일엔 제대로 즐길 수...</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->       
+        
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip05.jpg">
+                    <span class="locate">21</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>야누스처럼 두 개의 얼굴을 가진 부산.</h4>
+                    <p>가도가도 아직도 못가본 곳이 많은 부산. 한 두개가 아닌 여러 개의 얼굴을...</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->  
+        
+        
+        <div class="item">
+            <a href="#">
+                <div class="pic">
+                    <img src="images/tip06.jpg">
+                    <span class="locate">21</span>
+                </div><!--pic-->
+
+                <div class="txt">
+                    <h4>쇼퍼들의 도시, 쿠알라룸푸르</h4>
+                    <p>쇼핑센터로 가득한 쿠알라룸푸르, 어디부터 갈까?</p>
+                </div><!--txt-->
+            </a>
+        </div><!--item-->         
+    </div><!--con-->
+    
+    <div class="more">
+        <a href="#">
+            346개의 여행TIP 모두보기
+        </a>
+    </div><!--more-->
+
+</section><!--s3-->
+   
+
+<section class="s4">
+
+    <h3>인기도시 TOP 10</h3>
+
+    <div class="con">
+        <div class="row1">
+            <div class="item">
+                <a href="#">
+                    <img src="images/city01.jpg">
+                    <p>런던</p>
+                </a>
+            </div><!--item1-1-->
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/city02.jpg">
+                    <p>파리</p>
+                </a>
+            </div><!--item1-2-->
+
+            <div class="item">
+                <a href="#">
+                    <img src="images/city03.jpg">
+                    <p>싱가포르</p>
+                </a>
+            </div><!--item1-3-->
+        </div><!--row1-->
+
+        <div class="row2">
+            <div class="col">
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city04.jpg">
+                        <p>이스탄불</p>
+                    </a>
+                </div><!--item-->
+
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city08.jpg">
+                        <p>홍콩</p>
+                    </a>
+                </div><!--item-->
+            </div><!--col1-->
+
+            <div class="col">
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city05.jpg">
+                        <p>베네치아</p>
+                    </a>
+                </div><!--item-->
+
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city09.jpg">
+                        <p>방콕</p>
+                    </a>
+                </div><!--item-->
+            </div><!--col2-->
+
+            <div class="col3">
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city06.jpg">
+                        <p>바르셀로나</p>
+                    </a>
+                </div><!--item-->
+
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city10.jpg">
+                        <p>제주도</p>
+                    </a>
+                </div><!--item-->
+            </div><!--col3-->
+
+            <div class="col">
+                <div class="item">
+                    <a href="#">
+                        <img src="images/city07.jpg">
+                        <p>타이베이</p>
+                    </a>
+                </div><!--item-->
+            </div><!--col-->
+        </div><!--row2-->
+    </div><!--con-->
+
+</section><!--s4-->
+
+<section class="s5">
+
+    <div class="con">
+
+        <div class="pic">
+            <img src="images/mobile_demo.png">
+        </div><!--pic-->
+
+        <div class="txt">
+            <h3>모바일에서도 어스토리를 만나보세요</h3>
+            <p>
+                내가 계획한 일정과 전세계 주요 관광지 정보를 빠르고 쉽게 찾을 수 있습니다.<br>
+                어스토리의 모든 서비스는 무료 입니다. 
+            </p>
+            <a href="#"><img src="images/mobile_apple.png"></a>
+            <a href="#"><img src="images/mobile_google.png"></a>
+        </div><!--txt-->
+    </div><!--con-->
+
+</section><!--s5-->
+
+<!-- 
+어스토리
+여행지
+일정만들기
+호텔
+Q&A
+여행TIP
+모바일
+ -->
+
+<footer>
+    <div class="con">
+        <div class="item">
+            <h4>어스토리</h4>
+            <ul>
+                <li><a href="#">여행지</a></li>
+                <li><a href="#">일정만들기</a></li>
+                <li><a href="#">호텔</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">여행팁</a></li>
+                <li><a href="#">모바일</a></li>
+            </ul>
+        </div><!--item 1-->
+
+        <div class="item">
+            <h4>회사이야기</h4>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용방법</a></li>
+                <li><a href="#">광고 및 제휴</a></li>
+            </ul>
+        </div><!--item-->
+
+        <div class="item">
+            <h4>고객센터</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+        </div><!--item3-->
+
+        <div class="item">
+            <div class="select">
+                <div><a href="#">한국어</a></div>
+                <div><a href="#">KRW</a></div>
+            </div><!--select-->
+
+            <div class="sns">
+                <a href="#"><img src="images/icon_fb.png"></a>
+                <a href="#"><img src="images/icon_blog.png"></a>
+            </div><!--sns-->
+        </div><!--item4-->
+    </div><!--con-->
+
+    <div class="copyright">
+      <div class="wrap">
+        <p>Copyright ⓒ 2015 Earthtory.com, All Rights Reserved.</p>
+        <p>제휴문의: wonwoo@earthtory.com | 02-6441-4100</p>
+      </div><!--wrap-->
+    </div><!--copyright-->
+</footer>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+body{
+    border-top: 2px solid #50b5ff;
+}
+header{
+    background-color: powderblue;
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 57px;
+    align-items: center;
+/* 
+display:flex;
+    justify-content 메인축(가로축)내에서의 정렬
+    align-items 수직축(세로축)내에서의 정렬 
+*/
+}
+.gnb{
+    display: flex;
+    margin-left: 20px;
+    color: #363636;
+}
+.gnb li{
+    margin-right: 50px;
+}
+
+.gnb li:last-child{
+    margin-right: 0;
+}
+
+header form{
+    margin-left: 40px;
+    position: relative;
+}
+/* 다음시간에 form/input설명하기 */
+
+header form input{
+    width: 143px;
+    height: 26px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    padding-right: 25px;
+}
+
+
+header form button{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 3px;
+    right: 2px;
+}
+
+
+
+.util{
+    margin-left: auto;
+    display: flex;
+}
+
+.util a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #50b5ff;
+    width: 64px;
+    height: 28px;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-right: 0;
+}
+
+.util .join{
+    background-color: #f49900;
+    margin-left: 10px;
+}
+
+
+
+
+/* banner */
+
+.banner{
+    height: 454px;
+    background-image: url(../images/key_bg.jpg);
+    background-size: cover;
+    background-position: center 0;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.subTxt{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.srch{
+    width: 600px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+.srch form{
+    width:560px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.srch form input{
+    height: 50px;
+    width: 100%;
+    /* 
+    display:inline-block
+    인라인처럼 한 줄정렬되지만
+    블록요소처럼 너비와 높이속성이 들어갑니다. 
+    */
+    display: block;
+    border: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+/* 
+ 어떤 요소에 패딩이나 보더를 줄 경우
+ 해당 요소의 너비와 높이에 사이즈가 추가됩니다
+ ex) 200px*200px > padding-left:20px;
+    total 220px*200px
+
+   그런데
+   box-sizing:border-box를 적용시키면
+   해당요소의 너비와 높이 안쪽으로 
+   패딩과 보더가 생깁니다  
+*/
+}
+
+.srch button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+}
+
+.keyword{
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+/* s1 */
+
+.s1{
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+section h3{
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+}
+
+.s1 .con{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.s1 .con .item{
+    width: 348px;
+}
+
+.s1 .item img{
+    display: block;
+    transition: all 1.5s;
+/* 
+    box-shadow: 5px 5px 10px red;
+box-shadow는 이미지나 요소에게 그림자를 주는 것
+
+box-shadow : 가로이동값 세로이동값 번짐(크기) 색상
+              (왼>오)    (상>하)   
+*/
+}
+/*
+.item에게 마우스를 올렸을 때 해당 이미지에게
+그림자주기 
+*/
+.s1 .item:hover img{
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+
+.s1 h4{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    font-size: 18px;
+    color: #0087ea;
+}
+
+.s1 .item p{
+    color: #666;
+    font-size: 14px;
+}
+
+.s1 .more{
+    color: #f49900;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    width: 348px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s2{
+    background-color: #f0f0f0;
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.subTit{
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.s2 .con{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+/* 
+    display:flex적용시키면 항상
+    한줄로 모든 요소들을 다 정렬시키려는 성질을
+    가지게 됩니다. 
+    그래서 부모보다 자식들이 더 커지더라도 
+    어떻게든 한줄 안에 다 탑재하려고 하는데,
+    이때 초과되는 자식들은 아래로 
+    자연스럽게 흘러내리도록 만드는 것이 
+    flex-wrap:wrap 
+
+*/
+}
+.s2 .item{
+    width: 346px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+
+.s2 .item .pic{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.s2 .item .tit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    text-indent: 15px;
+    /* 
+       들여쓰기 속성
+       각 요소의 텍스트들의 시작지점으로부터
+       지정된 간격만큼 떨어진 다음부터
+       텍스트가 시작됨 
+    */
+
+ background-image: linear-gradient(transparent,black);
+/* 
+백그라운드 색상을 그라디언트로 넣는 방법 (선형)
+
+background-image: linear-gradient(색상1,색상2,...)
+
+만약 각도를 변경하고 싶다면
+색상들 앞에 넣어주면 됩니다
+
+background-image: linear-gradient(45deg,색상1,색상2,...)
+
+https://cssgradient.io/
+css 백그라운드 그라디언트 제작 툴
+원하는 그라데이션을 만든 다음
+하단의 코드를 복사 붙여넣기 하면 끝!!!!
+
+
+
+*/
+
+    padding-bottom: 10px;
+
+
+}
+
+.s2 .item .tit p{
+    font-size: 14px;
+    color: #0087ea;
+}
+
+.s2 .item .tit span{
+    color: #666;
+    font-weight: bold;
+}
+
+
+.s2 .item .pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.s2 .item .txt{
+    background-color: #fff;
+    position: relative;
+}
+
+.s2 .item .count{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.s2 .item .count li{
+    color: #666;
+    font-size: 14px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+.s2 .spot{
+    background-image: url(../images/icon_spot.png);
+    padding-left: 15px;
+}
+
+.s2 .view{
+    background-image: url(../images/icon_view.png);
+    padding-left: 20px;
+    background-position: 0 center;
+}
+
+.s2 .copy{
+    background-image: url(../images/icon_copy.png);
+    padding-left: 15px;
+}
+
+.s2 .info{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.s2 .info li{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.s2 .info .user{
+    background-image: url(../images/icon_user.png);
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+
+/* 
+.item img:hover{} 이미지위에 마우스 올렸을 때 작동
+.item:hover img{} 아이템에게 마우스를 올렸을 때 그 안에
+                 있는 이미지가 작동 
+*/
+
+.s2 .item .pic{
+    overflow: hidden;
+    /* 
+    정해진 크기 밖으로 흘러넘치는 자식이나 다른 컨텐츠들을
+    숨김처리하기 (클리핑마스크)
+    */
+}
+
+.s2 .item:hover .pic img{
+    transform: scale(1.2);
+}
+
+.s2 .item img{
+    transition: all 1.5s;
+}
+
+/* s3 */
+
+.s3{
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+.s3 .con{
+    width: 1092px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.s3 .con .item{
+    width: 261px;
+    height: 310px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+.s3 .con .item:nth-child(1),
+.s3 .con .item:last-child{
+    width: 538px;
+}
+
+.s3 .item .pic{
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+.s3 .item .pic img{
+    width: 100%;
+    height: 100%;
+    transition: all 1.5s;
+}
+.s3 .item .pic .locate{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 22px;
+    background-image: url(../images/spot_cnt.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.s3 .item .txt{
+    text-align: center;
+}
+.s3 .item .txt h4{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.s3 .item .txt p{
+    font-size: 14px;
+    color: #666;
+}
+.s3 .item:hover img{
+    transform: scale(1.2);
+}
+/* 
+ .s3 내의 .item에게 마우스를 올리면
+ 그 안의 img가 1.2배 커진다!!!!!   (1.5초동안) 
+
+
+
+*/
+
+
+section .more{
+    width: 346px;
+    margin-left: auto;
+    margin-right: auto; 
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.s4{
+    background-color: #f0f0f0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.s4 .con{
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px
+}
+
+.s4 .row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.s4 .row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.s4 .item{
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.s4 .item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    /*          (이동값)
+    text-shadow:가로 세로 번짐 색상
+    */
+}
+
+
+.s5{
+    background-image: url(../images/mobile_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s5 .con{
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.s5 .txt{
+    padding-top: 30px;
+}
+
+.s5 .txt h3{
+    color: #0087ea;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.s5 .txt p{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+footer{
+    background-color: #363c48;
+}
+
+footer .con{
+    width: 1092px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+footer .con .item{
+    width: 260px;
+    color: #fff;
+}
+
+footer .con h4{
+    color: #ccc;
+    border-bottom: 1px solid #424753;
+    padding-bottom: 4px;
+    margin-bottom: 4px;   
+}
+
+footer ul li{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+footer .select{
+    display: flex;
+    justify-content: space-between;
+}
+footer .select div{
+    width: 113px;
+    border: 1px solid #424753;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding: 5px 0 5px 10px */
+    background-image: url(../images/arr_sel.png);
+    background-repeat: no-repeat;
+    background-position: 100px center;
+}
+
+.sns{
+    margin-top: 12px;
+}
+
+.copyright{
+    background-color: rgba(0,0,0,0.3);
+    color: #ccc;
+    border-top: 1px solid #424753;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding:10px 0 */
+    font-size: 14px;
+}
+
+.copyright .wrap{
+    width: 1092px;
+    margin-left: auto;   
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}

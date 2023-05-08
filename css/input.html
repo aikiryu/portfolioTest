@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- 
+    input은 
+    사용자로부터 데이터를 직접 입력받는 장치 
+    기본적으로 반드시 type이라는 속성을 가지고 있으며 
+    이 type의 값에 따라서
+    형태와 용도가 달라진다. 
+ -->
+
+    <input type="text">
+    <input type="password">
+    <input type="color">
+    <input type="radio">
+    <input type="checkbox">
+
+
+    <!-- 
+    input태그는 반드시 form태그로 
+    감싸서 사용합니다. 
+    그래야지만 이 데이터들이 서버 프로그램으로
+    안정적으로 전달됩니다. (= submit)
+
+    Q. action 은 뭔가요?
+    A. 서버내에서 해당 데이터를 처리할 프로그래밍 파일을
+       지정
+-->
+
+
+        <form action="yaho.php">
+            <input type="text">
+
+            <input type="button" value="클릭❤">
+
+<!--
+    input에는 button 타입도 있지만,
+    HTML5부터 <button> 태그가 나오면서
+    기존의 input의 버튼과는 달리 내부에 텍스트나
+    이미지도 넣을 수 있을 뿐더러
+    form내부에 적을 경우 submit 기능까지 추가되기 때문에
+    지금은
+    <button>태그만 사용합니다. 
+
+    이 버튼태그는 단순히 서브밋/폼 용뿐만이 아니라,
+    실제로 디자인상 버튼인 것 / 버튼으로 작동할 것에도
+    사용하곤 합니다. 
+
+    단
+    <button><a href="#">이동</a></button>
+    이렇게 button안에 a태그를 넣어서는 안됩니다
+    클릭했을때 이동하는 형태의 버튼을 만들고 싶으면
+    그냥 a태그에게 display:block줘서 만드세용 
+
+ -->
+   
+
+            <button>얘는 버튼태그💫</button>
+
+            <input type="submit">
+        </form>
+
+
+    <style>
+        input:focus{
+            outline: 2px solid cyan;
+        }
+
+        .test{
+            color: lawngreen;
+            transition: all 1.5s;
+            width: 200px;
+        }
+
+        .test::placeholder{
+            color: deeppink;
+        }
+
+        .test:focus{
+            width: 250px;
+        }
+
+    /* 
+    input과 관련된 css 선택자
+    :focus
+    인풋/a/버튼 등 사용자와 상호작용하는 요소들은
+    focus 옵션을 설정해둔 경우,
+    클릭 혹은 선택되었을때 형태를 변경 시킬 수 있다.
+
+    ::placeholder
+    input에 들어가는 플레이스 홀더의 스타일을 변경할
+    수 있는 선택자!
+    글자색상/굵기/폰트사이즈와 같은 텍스트 관련된
+    간단한 요소들만 지정할 수 있다. 
+
+    css속성
+    outline 
+    사용자가 나레이터(tab키 같은거)나 키보드등으로
+    웹을 이용할 시 뜨는 외곽선
+    보더보다 더 밖에 위치해 있으며
+    브라우저에 따라서 흉물스러울 수 있으나
+    결코 제거해서는 안된다. 
+    (마우스를 사용할 수 없는 환경의 유저들을 배려)
+
+    대신 스타일은 얼마든지 변경하는 것은 가능함! 
+    
+    */
+
+    </style>
+
+
+    <input type="text" placeholder="플레이스홀더"
+    class="test">
+
+
+</body>
+</html>

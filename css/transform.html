@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .item{
+            width: 200px;
+            height: 200px;
+            border: 4px solid #000;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+            transition: all 2s;
+        }
+/* 
+        transform 속성
+        보이는 모양만 변경될뿐
+        브라우저상에서 계산되고 있는
+        위치/크기는 전혀 변하지 않는다!
+
+    200*200 -> scale(2) -> 
+       2배로 커진것처럼 보이지만
+       브라우저상에서 측정되는것은 여전히
+       200*200 입니다. 
+
+       = 주변의 다른 요소(부모포함)들이 
+       해당요소가 커지든 말든 회전하든 말든
+       신경쓰지 X
+
+        - scale()
+        - skew()
+        - rotate()
+        - translate()
+*/
+
+        .item1:hover{
+            transform: scale(2);
+            /* scale() 크기 조절 속성
+           배수로 커집니다.
+           2 = 기존사이즈의 2배 
+            */
+        }
+
+        .item2:hover{
+            width: 400px;
+            height: 400px;
+        }
+
+        .item3:hover{
+            transform: rotate(1080deg);
+            /* rotate() 회전
+            주로 사용되는 단위는 deg, 즉
+            "도 360°"
+            */
+        }
+
+        .item4:hover{
+            transform: rotateY(180deg);
+        }
+
+        body{height: 10000px;}
+
+        .item5:hover{
+            transform: skew(45deg);
+            /* 
+            기울이기 속성! 
+            */
+        }
+
+        .con{
+            width: 1000px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            border:1px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .con div{
+            width: 300px;
+            height: 300px;
+            background-color: limegreen;
+            border: 1px solid #000;
+            font-size: 80px;
+        }
+
+        .box4{
+            transform: translate(40px, 400px);
+        }
+
+        .box2:hover{
+            transform: translate(100px,100px);
+        }
+
+/* 
+transform:translate(x축 이동값, y축 이동값)
+                     왼>오      상>하
+
+있던자리에서 이동시키는 속성
+transform 속성이기 때문에
+적용된 요소가 보기에는 이동하는 것 처럼 보이지만
+사실상 브라우저상에서는 제자리에 있다고 
+계산되고 있는 중 
+
+그렇기 때문에 scale, translate 와 같은 속성들은
+레이아웃을 짜는 용도로 사용되어서는 안된다.
+그냥 장식적인 용도로 사용하는 것이 옳다! 
+
+
+
+
+*/
+
+    </style>
+</head>
+<body>
+
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+
+
+        <div class="con">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+            <div class="box4">4</div>
+            <div class="box5">5</div>
+            <div class="box6">6</div>
+        </div><!--con-->
+
+
+</body>
+</html>
